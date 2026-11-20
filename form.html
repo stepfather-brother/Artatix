@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Data Pembeli | Artatix</title>
+<meta name="theme-color" content="#1e348f">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Form data pemesan NEVERLAND BANDUNG 2027 — lengkapi data dan lanjutkan pembayaran di Artatix.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://artatixmyid.github.io/titikbalikfest/banner.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artatix">
+<meta property="og:title" content="Data Pembeli | Artatix">
+<meta property="og:description" content="Form data pemesan NEVERLAND BANDUNG 2027.">
+<meta property="og:image" content="https://artatixmyid.github.io/titikbalikfest/banner.png">
+<meta property="og:image:alt" content="NEVERLAND BANDUNG 2027">
+<meta property="og:locale" content="id_ID">
+<meta property="og:url" content="https://artatixmyid.github.io/titikbalikfest/form.html">
+<link rel="canonical" href="https://artatixmyid.github.io/titikbalikfest/form.html">
+<link rel="icon" type="image/png" href="logo-artatix.png">
+<link rel="apple-touch-icon" href="logo-artatix.png">
+<link rel="preload" as="image" href="banner.png">
+<link rel="prefetch" href="qris.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1e348f;
+  --blue:#4353e0;
+  --blue2:#3848d4;
+  --ink:#141b3d;
+  --ink-2:#3c4257;
+  --muted:#9aa1b5;
+  --soft:#64708c;
+  --panel:#edf1fb;
+  --panel-2:#f4f6fc;
+  --line:#e8edf5;
+  --line-2:#dde3f6;
+  --red:#e5484d;
+  --hot:#d92638;
+  --hot2:#ff7a18;
+  --page-bg:#fff;
+  --r-card:16px;
+  --r-field:12px;
+  --r-btn:12px;
+  --shadow-sm:0 1px 3px rgba(20,27,61,.05),0 4px 12px rgba(20,27,61,.05);
+  --shadow-md:0 8px 24px rgba(30,52,143,.10);
+  --shadow-blue:0 8px 20px rgba(67,83,224,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',sans-serif;background:var(--page-bg);color:var(--ink);transition:opacity .3s ease;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+body.leaving{opacity:0}
+body.lock{overflow:hidden}
+::selection{background:#dfe5fb}
+:focus-visible{outline:2px solid rgba(67,83,224,.4);outline-offset:2px}
+img{display:block}
+button,input,select,textarea{font-family:inherit}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.page{max-width:520px;margin:0 auto;padding:0 20px}
+.topbar{padding:14px 0 12px;background:var(--page-bg)}
+.bar-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:block;text-decoration:none}
+.brand img{width:148px;max-height:34px;object-fit:contain;object-position:left center}
+.lang{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:#f8fafc;font-size:12px;font-weight:600;color:var(--ink-2)}
+.flag{width:15px;height:15px;border-radius:50%;background:linear-gradient(#ed3b36 0 50%,#fff 50%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.progress{background:var(--navy);margin:0 -20px}
+.steps{height:48px;display:flex;align-items:center;list-style:none;margin:0;padding:0}
+.step{display:flex;align-items:center;gap:7px;flex:none}
+.s-dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.25);background:transparent;flex:none}
+.step.done .s-dot{color:#fff;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35)}
+.step.active .s-dot{color:var(--navy);background:#fff;border-color:#fff}
+.s-label{font-size:11px;font-weight:600;color:#fff;white-space:nowrap}
+.s-sep{flex:1;min-width:8px;height:1.5px;background:rgba(255,255,255,.2);border-radius:2px}
+
+.banner{width:100%;height:auto;border-radius:var(--r-card);margin-top:20px;box-shadow:var(--shadow-md)}
+
+.ticker{position:relative;overflow:hidden;margin-top:18px;border-radius:var(--r-card);background:linear-gradient(90deg,var(--hot),var(--hot2),var(--hot));background-size:220% 100%;box-shadow:0 10px 26px rgba(217,38,56,.28),inset 0 0 0 1px rgba(255,255,255,.22);animation:tickerBg 6s linear infinite}
+.ticker::before,.ticker::after{content:"";position:absolute;top:0;bottom:0;width:34px;z-index:2;pointer-events:none}
+.ticker::before{left:0;background:linear-gradient(90deg,rgba(217,38,56,.95),transparent)}
+.ticker::after{right:0;background:linear-gradient(-90deg,rgba(217,38,56,.95),transparent)}
+.ticker-track{display:flex;width:max-content;padding:10px 0;will-change:transform;animation:tickerMove 15s linear infinite}
+.t-group{display:flex;align-items:center;flex:none}
+.t-item{display:inline-flex;align-items:center;gap:8px;padding:0 22px;color:#fff;font-size:13px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.18)}
+.t-warn{display:inline-block;font-size:14px;animation:blink .85s ease-in-out infinite}
+@keyframes tickerMove{to{transform:translateX(-50%)}}
+@keyframes tickerBg{to{background-position:220% 0}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+
+.checkout-content{padding-bottom:185px}
+.section-heading{display:inline-flex;align-items:center;gap:9px;background:var(--blue);color:#fff;font-size:15px;font-weight:700;padding:11px 18px;border-radius:999px;margin:24px 0 10px;box-shadow:var(--shadow-blue)}
+.section-heading svg{width:17px;height:17px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.note{font-size:12.5px;line-height:1.65;color:var(--soft);margin-bottom:4px}
+
+.summary-card{background:var(--panel);border-radius:var(--r-card);padding:16px 16px 6px;margin-top:16px;animation:rise .45s cubic-bezier(.2,.7,.3,1) backwards}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.summary-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:10px}
+.summary-row{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13.5px;color:var(--ink-2);padding:6px 2px}
+.summary-row strong{font-weight:700;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.summary-total{margin-top:6px;padding:11px 2px 8px;border-top:2px dashed #cdd5ee;font-size:14.5px;font-weight:600;color:var(--ink)}
+.summary-total strong{font-size:19px;color:var(--navy);font-variant-numeric:tabular-nums}
+
+.field{margin-bottom:14px}
+.field:last-child{margin-bottom:10px}
+.field label{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;border:2px solid var(--line-2);background:var(--page-bg);border-radius:var(--r-field);padding:11px 14px;font:inherit;font-size:14px;color:var(--ink);transition:border-color .15s,box-shadow .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(67,83,224,.12)}
+.field textarea{resize:vertical;min-height:84px}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239aa1b5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 14px center;background-size:14px;padding-right:40px}
+input[readonly]{background:var(--panel-2);color:var(--muted)}
+.error{border-color:var(--red)!important;background:#fff8f8!important;animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media (pointer:coarse){.field input,.field select,.field textarea{font-size:16px}}
+
+.check-row{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--ink-2);margin-top:10px;cursor:pointer;line-height:1.55}
+.check-row input{width:20px;height:20px;accent-color:var(--blue);flex:none;margin-top:1px;cursor:pointer}
+
+.holder{background:var(--panel);border-radius:var(--r-card);padding:16px 16px 2px;margin-top:16px;animation:rise .45s cubic-bezier(.2,.7,.3,1) backwards}
+.holder-head{display:flex;align-items:center;gap:12px}
+.holder-num{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.holder-title{font-size:14px;font-weight:700}
+.holder-sub{font-size:12px;color:var(--muted);font-weight:500}
+.cut{position:relative;border-top:2px dashed #cdd5ee;margin:14px -16px 12px}
+.notch{position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--page-bg)}
+.notch.l{left:-11px}
+.notch.r{right:-11px}
+.same{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--blue);background:#e7ebfc;border-radius:var(--r-field);padding:10px 12px;cursor:pointer;transition:background .15s}
+.same:hover{background:#dde4fa}
+.same input{width:18px;height:18px;accent-color:var(--blue);flex:none;cursor:pointer}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(23,37,84,.06);padding-bottom:env(safe-area-inset-bottom)}
+.sticky-inner{max-width:520px;margin:0 auto;padding:12px 20px 14px}
+.p-row{display:flex;align-items:center;justify-content:space-between}
+.p-label{font-size:14.5px;font-weight:600;color:var(--ink-2)}
+.p-price{font-size:22px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.primary{margin-top:12px;width:100%;border:0;border-radius:var(--r-btn);padding:15px;font-size:16px;font-weight:700;color:#fff;background:linear-gradient(180deg,#4d5ce8,#4353e0);box-shadow:var(--shadow-blue);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:transform .15s,box-shadow .2s,opacity .2s;touch-action:manipulation;-webkit-user-select:none;user-select:none}
+.primary svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.primary:disabled{background:#aeb9f0;box-shadow:none;cursor:not-allowed}
+.primary:not(:disabled):hover{box-shadow:0 10px 24px rgba(67,83,224,.38)}
+.primary:not(:disabled):hover svg{transform:translateX(3px)}
+.primary:not(:disabled):active{transform:scale(.99)}
+
+.loading{position:fixed;inset:0;z-index:80;display:grid;place-items:center;background:rgba(20,27,61,.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.loading.active{opacity:1;visibility:visible}
+.loading-box{background:var(--page-bg);border-radius:var(--r-card);padding:26px 34px;text-align:center;box-shadow:0 20px 50px rgba(20,27,61,.22)}
+.spinner{width:42px;height:42px;border-radius:50%;border:4px solid #dfe4f6;border-top-color:var(--blue);animation:spin .8s linear infinite;margin:0 auto 14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-box strong{font-size:15px}
+.loading-box p{font-size:12px;color:var(--soft);margin-top:8px}
+
+.toast{position:fixed;left:50%;bottom:calc(150px + env(safe-area-inset-bottom));transform:translate(-50%,14px) scale(.97);z-index:90;background:#1c2440;color:#fff;font-size:13.5px;font-weight:500;padding:11px 18px;border-radius:var(--r-field);max-width:calc(100vw - 40px);text-align:center;opacity:0;pointer-events:none;box-shadow:0 12px 30px rgba(0,0,0,.24);transition:opacity .25s,transform .25s}
+.toast.show{opacity:1;transform:translate(-50%,0) scale(1)}
+
+.artatix-footer{width:100%;margin:52px 0 0;padding:0 0 36px;background:var(--page-bg);color:var(--ink)}
+.artatix-footer-inner{width:100%;max-width:680px;margin:0 auto;padding:0 24px;text-align:center}
+.artatix-footer-logo{display:flex;align-items:center;justify-content:center;width:100%;margin:0 auto 40px}
+.artatix-footer-logo img{width:min(190px,58vw);height:auto;object-fit:contain}
+.artatix-footer-contact-list{display:grid;justify-items:center;gap:18px}
+.artatix-footer-contact{display:flex;align-items:center;justify-content:center;gap:11px;min-height:40px;color:var(--ink);font-size:16px;line-height:1.35;font-weight:500}
+.artatix-footer-contact:hover{color:var(--blue)}
+.artatix-footer-icon{width:36px;height:36px;flex:0 0 36px;display:grid;place-items:center;color:var(--blue)}
+.artatix-footer-icon svg{width:28px;height:28px;display:block;fill:currentColor}
+.artatix-footer-icon.mail svg{width:27px;height:27px}
+.artatix-footer-divider{width:100%;height:1px;margin:38px auto 34px;background:var(--line)}
+.artatix-footer-copy{margin:0;color:var(--muted);font-size:15px;line-height:1.5;font-weight:400}
+
+@media (min-width:700px){
+  .artatix-footer-inner{padding:0 48px}
+  .artatix-footer-logo img{width:220px}
+  .artatix-footer-contact{font-size:18px;gap:13px}
+  .artatix-footer-icon{width:40px;height:40px;flex-basis:40px}
+  .artatix-footer-icon svg{width:31px;height:31px}
+  .artatix-footer-copy{font-size:17px}
+}
+@media (max-width:380px){
+  .artatix-footer-inner{padding:0 18px}
+  .artatix-footer-logo img{width:min(170px,60vw)}
+  .artatix-footer-contact{font-size:14px}
+}
+
+@media (max-width:430px){.t-item{padding:0 14px;font-size:12px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar"><div class="bar-inner">
+<a class="brand" href="index.html" aria-label="Artatix beranda"><img src="logo-artatix.png" alt="Artatix" width="148" height="39" decoding="async"></a>
+<span class="lang"><span class="flag" aria-hidden="true"></span>ID</span>
+</div></header>
+<nav class="progress" aria-label="Langkah pemesanan"><ol class="steps" style="padding-inline:18px">
+<li class="step done"><span class="s-dot">✓</span><span class="sr-only">Pilih Kategori</span></li><li class="s-sep" aria-hidden="true"></li>
+<li class="step active" aria-current="step"><span class="s-dot">2</span><span class="s-label">Data Pembeli</span></li><li class="s-sep" aria-hidden="true"></li>
+<li class="step"><span class="s-dot">3</span><span class="sr-only">Pembayaran</span></li><li class="s-sep" aria-hidden="true"></li>
+<li class="step"><span class="s-dot">4</span><span class="sr-only">E-Ticket</span></li>
+</ol></nav>
+<img class="banner" src="banner.png" alt="NEVERLAND BANDUNG 2027 — 21 Maret 2027, Bandung, Kota Bandung" width="1400" height="520" fetchpriority="high" decoding="async">
+<aside class="ticker" aria-label="Peringatan stok tiket">
+<p class="sr-only">Peringatan: tiket hampir sold out. Selesaikan pemesananmu sebelum kehabisan.</p>
+<div class="ticker-track" aria-hidden="true">
+<div class="t-group">
+<span class="t-item"><span class="t-warn">⚠</span>TIKET HAMPIR SOLD OUT</span>
+<span class="t-item">SELESAIKAN PEMESANANMU</span>
+<span class="t-item">STOK TERBATAS</span>
+</div>
+<div class="t-group">
+<span class="t-item"><span class="t-warn">⚠</span>TIKET HAMPIR SOLD OUT</span>
+<span class="t-item">SELESAIKAN PEMESANANMU</span>
+<span class="t-item">STOK TERBATAS</span>
+</div>
+</div>
+</aside>
+<main class="checkout-content">
+<h1 class="section-heading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Data Pembeli</h1>
+<p class="note">Isi data sesuai identitas yang berlaku. E-ticket akan dikirim ke e-mail dan WhatsApp aktif yang kamu cantumkan. Data tersimpan otomatis di perangkatmu.</p>
+<section class="summary-card"><div class="summary-title">Ringkasan Pesanan</div><div id="summaryRows"></div><div class="summary-row summary-total"><span>Total</span><strong id="totalBayar">Rp0</strong></div></section>
+<form id="buyerForm" novalidate>
+<section class="summary-card"><div class="summary-title">Data Pemesan</div>
+<div class="field"><label for="nama">Nama Lengkap</label><input id="nama" type="text" autocomplete="name" enterkeyhint="next" maxlength="100" placeholder="Masukkan nama lengkap"></div>
+<div class="field"><label for="identitas">Jenis Identitas</label><select id="identitas"><option value="">Pilih jenis identitas</option><option>KTP</option><option>SIM</option><option>Paspor</option><option>Kartu Pelajar</option></select></div>
+<div class="field"><label for="nomorId">Nomor Identitas</label><input id="nomorId" type="text" autocomplete="off" spellcheck="false" enterkeyhint="next" maxlength="40" placeholder="Masukkan nomor identitas"></div>
+<div class="field"><label for="email">E-mail Aktif</label><input id="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" autocapitalize="none" enterkeyhint="next" maxlength="120" placeholder="contoh@email.com"></div>
+<div class="field"><label for="wa">No. WhatsApp Aktif</label><input id="wa" type="tel" inputmode="tel" autocomplete="tel" spellcheck="false" enterkeyhint="done" maxlength="20" placeholder="08xxxxxxxxxx"></div>
+<div class="field"><label for="alamat">Alamat / Tempat Tinggal</label><textarea id="alamat" autocomplete="street-address" maxlength="500" placeholder="Masukkan alamat lengkap"></textarea></div>
+</section>
+<section id="holderContainer" aria-label="Data pemegang tiket"></section>
+<section class="summary-card"><div class="summary-title">Persetujuan</div><label class="check-row"><input type="checkbox" id="setuju1"><span>Data yang saya isi adalah benar dan dapat dipertanggungjawabkan.</span></label><label class="check-row"><input type="checkbox" id="setuju2"><span>Saya menyetujui syarat dan ketentuan acara serta kebijakan privasi.</span></label></section>
+</form>
+<footer class="artatix-footer" aria-label="Informasi Artatix">
+<div class="artatix-footer-inner">
+<a class="artatix-footer-logo" href="index.html" aria-label="Artatix — kembali ke beranda">
+<img src="logo-artatix.png" alt="Artatix" width="235" height="54" loading="lazy" decoding="async">
+</a>
+<div class="artatix-footer-contact-list">
+<a class="artatix-footer-contact" href="https://wa.me/6282137676220" aria-label="WhatsApp Artatix">
+<span class="artatix-footer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.47 0 .12 5.35.12 11.93c0 2.1.55 4.15 1.59 5.96L.02 24l6.25-1.64a11.86 11.86 0 0 0 5.78 1.49h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.42ZM12.06 21.8h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.88 9.88 0 1 1 8.34 4.6Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.08 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg></span>
+<span>+62 821-3767-6220</span>
+</a>
+<a class="artatix-footer-contact" href="mailto:cs@artatix.co.id" aria-label="Email Artatix">
+<span class="artatix-footer-icon mail" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5.33L4 8.2V6l8 5.33L20 6v2.2Z"/></svg></span>
+<span>cs@artatix.co.id</span>
+</a>
+</div>
+<div class="artatix-footer-divider" aria-hidden="true"></div>
+<p class="artatix-footer-copy">© 2026 Artatix. Hak Cipta Dilindungi.</p>
+</div>
+</footer>
+</main>
+</div>
+<div class="sticky"><div class="sticky-inner">
+<div class="p-row" aria-live="polite"><span class="p-label">Total Pembayaran</span><strong class="p-price" id="stickyTotal">Rp0</strong></div>
+<button class="primary" id="lanjut" type="button"><span>Lanjut ke Pembayaran</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+</div></div>
+<div class="loading" id="loading" role="status"><div class="loading-box"><div class="spinner"></div><strong>Menyimpan Pesanan</strong><p>Menyiapkan data checkout...</p></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  'use strict';
+  const KEY = { items: 'gf_checkout_items_v1', draft: 'gf_draft_v1' };
+  const DEST = 'qris.html';
+
+  const $ = id => document.getElementById(id);
+  const nf = new Intl.NumberFormat('id-ID');
+  const fmt = n => 'Rp' + nf.format(Math.round(n));
+  const el = (tag, cls, text) => {
+    const node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+
+  let items = [];
+  try {
+    const raw = JSON.parse(localStorage.getItem(KEY.items) || '[]');
+    if (Array.isArray(raw)) {
+      items = raw.map(i => {
+        if (!i || typeof i !== 'object') return null;
+        return {
+          id: String(i.id ?? i.nama ?? i.name ?? ''),
+          nama: String(i.nama ?? i.name ?? 'Tiket'),
+          harga: Number(i.harga ?? i.price),
+          qty: Math.floor(Number(i.qty))
+        };
+      }).filter(i => i && i.nama && Number.isFinite(i.harga) && i.harga >= 0 && Number.isInteger(i.qty) && i.qty > 0);
+    }
+  } catch (e) {}
+
+  let total = 0, totalQty = 0;
+  items.forEach(i => { total += i.qty * i.harga; totalQty += i.qty; });
+
+  if (!items.length || totalQty < 1) { location.replace('tiket.html'); return; }
+
+  const reduceMotion = Boolean(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  const countUp = (elm, target) => {
+    if (reduceMotion) { elm.textContent = fmt(target); return; }
+    const t0 = performance.now(), dur = 700;
+    const step = now => {
+      const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      elm.textContent = fmt(Math.round(target * e));
+      if (p < 1) requestAnimationFrame(step);
+      else elm.textContent = fmt(target);
+    };
+    requestAnimationFrame(step);
+  };
+  countUp($('totalBayar'), total);
+  countUp($('stickyTotal'), total);
+
+  const rows = $('summaryRows'), rowsFrag = document.createDocumentFragment();
+  items.forEach(i => {
+    const row = el('div', 'summary-row');
+    row.appendChild(el('span', null, i.nama + ' (' + i.qty + 'x)'));
+    row.appendChild(el('strong', null, fmt(i.qty * i.harga)));
+    rowsFrag.appendChild(row);
+  });
+  rows.appendChild(rowsFrag);
+
+  const nama = $('nama'), identitas = $('identitas'), nomorId = $('nomorId'), email = $('email'), wa = $('wa'), alamat = $('alamat');
+  const holderContainer = $('holderContainer');
+  const btn = $('lanjut'), loading = $('loading'), toast = $('toast');
+  const setuju1 = $('setuju1'), setuju2 = $('setuju2');
+  const form = $('buyerForm');
+
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const phoneRe = /^(?:\+62|62|0)8\d{7,12}$/;
+  const DRAFT_IDS = ['nama', 'identitas', 'nomorId', 'email', 'wa', 'alamat'];
+  const BUYER_SYNC = ['nama', 'email', 'wa'];
+
+  let toastTimer = null, draftTimer = null, leaving = false;
+
+  const notify = msg => {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+  };
+
+  const holders = [];
+  items.forEach(item => {
+    for (let n = 0; n < item.qty; n++) holders.push({ ticketId: item.id, ticketName: item.nama, number: holders.length + 1 });
+  });
+
+  let holderSeq = 1;
+  const holderField = (labelText, cls, type, max, ph) => {
+    const id = cls + '-' + (++holderSeq);
+    const wrap = el('div', 'field');
+    const labelEl = el('label', null, labelText);
+    labelEl.htmlFor = id;
+    const input = document.createElement('input');
+    input.type = type;
+    input.className = cls;
+    input.id = id;
+    input.maxLength = max;
+    input.placeholder = ph;
+    input.autocomplete = 'off';
+    input.spellcheck = false;
+    input.setAttribute('enterkeyhint', 'next');
+    if (cls === 'h-email') input.autocapitalize = 'none';
+    wrap.appendChild(labelEl);
+    wrap.appendChild(input);
+    return wrap;
+  };
+
+  const holderCards = [];
+
+  const holderTemplate = h => {
+    const card = el('div', 'holder');
+    card.dataset.ticket = h.ticketId;
+    card.dataset.number = h.number;
+    const head = el('div', 'holder-head');
+    head.appendChild(el('span', 'holder-num', String(h.number)));
+    const box = el('div');
+    box.appendChild(el('div', 'holder-title', 'Data Pemegang Tiket #' + h.number));
+    box.appendChild(el('div', 'holder-sub', h.ticketName));
+    head.appendChild(box);
+    card.appendChild(head);
+    const cut = el('div', 'cut');
+    cut.appendChild(el('span', 'notch l'));
+    cut.appendChild(el('span', 'notch r'));
+    card.appendChild(cut);
+    const same = el('label', 'same');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.className = 'same-owner';
+    same.appendChild(cb);
+    same.appendChild(document.createTextNode('Sama dengan Data Pemesan'));
+    card.appendChild(same);
+    card.appendChild(holderField('Nama Lengkap', 'h-name', 'text', 100, 'Nama pemegang tiket'));
+    card.appendChild(holderField('E-mail Aktif', 'h-email', 'email', 120, 'email@contoh.com'));
+    card.appendChild(holderField('No. WhatsApp', 'h-wa', 'tel', 20, '08xxxxxxxxxx'));
+    return card;
+  };
+
+  const hFrag = document.createDocumentFragment();
+  holders.slice(1).forEach(h => {
+    const card = holderTemplate(h);
+    holderCards.push(card);
+    hFrag.appendChild(card);
+  });
+  holderContainer.appendChild(hFrag);
+
+  document.querySelectorAll('.summary-card').forEach((c, i) => { c.style.animationDelay = i * 60 + 'ms'; });
+  holderCards.forEach((c, i) => { c.style.animationDelay = 60 + i * 60 + 'ms'; });
+
+  const OWNER_MAP = { 'h-name': nama, 'h-email': email, 'h-wa': wa };
+
+  const syncOwner = card => {
+    const on = card.querySelector('.same-owner').checked;
+    Object.keys(OWNER_MAP).forEach(cls => {
+      const input = card.querySelector('.' + cls);
+      if (!input) return;
+      input.readOnly = on;
+      if (on) input.value = OWNER_MAP[cls].value;
+    });
+  };
+
+  const syncCheckedOwners = () => { holderCards.forEach(card => { if (card.querySelector('.same-owner').checked) syncOwner(card); }); };
+
+  holderContainer.addEventListener('change', event => {
+    const t = event.target;
+    if (t && t.classList && t.classList.contains('same-owner')) {
+      const card = t.closest('.holder');
+      if (card) syncOwner(card);
+    }
+  });
+
+  const clearError = t => {
+    if (t && t.classList && t.classList.contains('error')) {
+      t.classList.remove('error');
+      t.removeAttribute('aria-invalid');
+    }
+  };
+
+  const collectDraft = () => ({
+    buyer: DRAFT_IDS.reduce((acc, k) => { acc[k] = $(k).value; return acc; }, {}),
+    holders: holderCards.map(card => ({
+      number: Number(card.dataset.number),
+      ticketId: card.dataset.ticket,
+      checked: card.querySelector('.same-owner').checked,
+      nama: card.querySelector('.h-name').value,
+      email: card.querySelector('.h-email').value,
+      wa: card.querySelector('.h-wa').value
+    }))
+  });
+
+  const writeDraft = () => { try { localStorage.setItem(KEY.draft, JSON.stringify(collectDraft())); } catch (e) {} };
+  const saveDraft = () => { clearTimeout(draftTimer); draftTimer = setTimeout(writeDraft, 250); };
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(KEY.draft) || 'null');
+    if (saved) {
+      const buyerData = saved.buyer || saved;
+      DRAFT_IDS.forEach(k => { const f = $(k); if (f && typeof buyerData[k] === 'string') f.value = buyerData[k]; });
+      const savedHolders = Array.isArray(saved.holders) ? saved.holders : [];
+      holderCards.forEach(card => {
+        const rec = savedHolders.find(h => h && Number(h.number) === Number(card.dataset.number) && h.ticketId === card.dataset.ticket);
+        if (!rec) return;
+        card.querySelector('.h-name').value = typeof rec.nama === 'string' ? rec.nama : '';
+        card.querySelector('.h-email').value = typeof rec.email === 'string' ? rec.email : '';
+        card.querySelector('.h-wa').value = typeof rec.wa === 'string' ? rec.wa : '';
+        if (rec.checked) { card.querySelector('.same-owner').checked = true; syncOwner(card); }
+      });
+    }
+  } catch (e) {}
+
+  const isDraftField = t =>
+    (t instanceof HTMLInputElement || t instanceof HTMLSelectElement || t instanceof HTMLTextAreaElement) &&
+    (DRAFT_IDS.includes(t.id) || holderContainer.contains(t));
+
+  document.addEventListener('input', event => {
+    const t = event.target;
+    clearError(t);
+    if (BUYER_SYNC.includes(t.id)) syncCheckedOwners();
+    if (isDraftField(t)) saveDraft();
+  });
+
+  document.addEventListener('change', event => {
+    const t = event.target;
+    clearError(t);
+    if (isDraftField(t)) saveDraft();
+  });
+
+  window.addEventListener('pagehide', () => { if (draftTimer) { clearTimeout(draftTimer); writeDraft(); } });
+
+  const valid = () => {
+    let ok = true;
+    const fail = f => { f.classList.add('error'); f.setAttribute('aria-invalid', 'true'); ok = false; };
+    if (!nama.value.trim()) fail(nama);
+    if (!identitas.value) fail(identitas);
+    if (!nomorId.value.trim()) fail(nomorId);
+    if (!email.value.trim()) fail(email);
+    else if (!emailRe.test(email.value.trim())) fail(email);
+    if (!wa.value.trim()) fail(wa);
+    else if (!phoneRe.test(wa.value.replace(/[\s-]/g, ''))) fail(wa);
+    if (!alamat.value.trim()) fail(alamat);
+    holderCards.forEach(card => {
+      const hn = card.querySelector('.h-name'), he = card.querySelector('.h-email'), hw = card.querySelector('.h-wa');
+      if (!hn.value.trim()) fail(hn);
+      if (!he.value.trim()) fail(he);
+      else if (!emailRe.test(he.value.trim())) fail(he);
+      if (!hw.value.trim()) fail(hw);
+      else if (!phoneRe.test(hw.value.replace(/[\s-]/g, ''))) fail(hw);
+    });
+    return ok;
+  };
+
+  const buildOrder = () => ({
+    createdAt: new Date().toISOString(),
+    nama: nama.value.trim(),
+    identitas: identitas.value,
+    nomorId: nomorId.value.trim(),
+    email: email.value.trim(),
+    wa: wa.value.trim(),
+    alamat: alamat.value.trim(),
+    holders: holders.map((holder, index) => {
+      if (index === 0) {
+        return {
+          number: holder.number,
+          ticketId: holder.ticketId,
+          ticketName: holder.ticketName,
+          nama: nama.value.trim(),
+          email: email.value.trim(),
+          wa: wa.value.trim()
+        };
+      }
+      const card = holderCards[index - 1];
+      const sameAsBuyer = card.querySelector('.same-owner').checked;
+      return {
+        number: holder.number,
+        ticketId: holder.ticketId,
+        ticketName: holder.ticketName,
+        sameAsBuyer,
+        nama: card.querySelector('.h-name').value.trim(),
+        email: card.querySelector('.h-email').value.trim(),
+        wa: card.querySelector('.h-wa').value.trim()
+      };
+    }),
+    cart: {
+      items: items.map(i => ({ jenis: i.nama, qty: i.qty, harga: i.harga, ticketId: i.id })),
+      totalQty: totalQty,
+      totalPrice: total
+    }
+  });
+
+  const resetUi = () => {
+    leaving = false;
+    btn.disabled = false;
+    loading.classList.remove('active');
+    document.body.classList.remove('leaving', 'lock');
+  };
+
+  const handleSubmit = () => {
+    if (btn.disabled || leaving) return;
+    if (!valid()) {
+      notify('Harap lengkapi data yang ditandai merah');
+      const first = document.querySelector('.error');
+      if (first) first.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      return;
+    }
+    if (!setuju1.checked || !setuju2.checked) {
+      notify('Harap centang seluruh kotak persetujuan.');
+      const agreeCard = setuju1.closest('.summary-card');
+      if (agreeCard) agreeCard.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      return;
+    }
+    leaving = true;
+    btn.disabled = true;
+    loading.classList.add('active');
+    document.body.classList.add('lock');
+
+    const order = buildOrder();
+    try {
+      const qrisOrder = {
+        nama: order.nama, identitas: order.identitas, nomorId: order.nomorId,
+        email: order.email, whatsapp: order.wa, alamat: order.alamat,
+        createdAt: order.createdAt,
+        holders: order.holders,
+        cart: {
+          items: order.cart.items.map(i => ({ name: i.jenis, jenis: i.jenis, qty: i.qty, price: i.harga, harga: i.harga, ticketId: i.ticketId })),
+          totalQty: order.cart.totalQty, totalPrice: order.cart.totalPrice
+        }
+      };
+      localStorage.setItem('data_pemesan', JSON.stringify(qrisOrder));
+    } catch (e) {
+      resetUi();
+      notify('Data tidak dapat disimpan di perangkat. Cek ruang penyimpanan browser lalu coba lagi.');
+      return;
+    }
+
+    document.body.classList.add('leaving');
+    setTimeout(() => window.location.assign(DEST), reduceMotion ? 0 : 300);
+  };
+
+  form.addEventListener('keydown', event => {
+    if (event.key === 'Enter' && event.target instanceof HTMLInputElement && event.target.type !== 'checkbox' && !event.repeat) {
+      event.preventDefault();
+      handleSubmit();
+    }
+  });
+  btn.addEventListener('click', handleSubmit);
+
+  window.addEventListener('pageshow', event => { if (event.persisted && leaving) resetUi(); });
+})();
+</script>
+</body>
+</html>
